@@ -1,1 +1,1 @@
-[!gallery](gallery.png)
+[!gallery](./gallery.png)
