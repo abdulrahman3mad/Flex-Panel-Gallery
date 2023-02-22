@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+body {
+    overflow: hidden;
+    font-family: 'Amatic SC', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.panels-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: calc(100%/5);
+    transition-property: width, scale, size;
+    transition-delay: 0 3s;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.2, 0.05, 0.595, 0.535);
+    overflow: hidden;
+    color: white;
+    font-size: 6rem;
+    text-shadow: 2px 2px 2px rgb(119, 119, 119);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel.clicked {
+    width: calc(100%/5 + 600px);
+    scale: 1.2;
+    font-size: 9rem;
+}
+
+.panel span {
+    font-size: 3.5rem;
+    position: absolute;
+    transition: all 0.5s;
+    transition-delay: 0.2s;
+}
+
+.panel .top-text {
+    top: -100px;
+}
+
+.panel .bottom-text {
+    bottom: -100px;
+}
+
+.panel.clicked .top-text {
+    top: 100px;
+}
+
+.panel.clicked .bottom-text {
+    bottom: 100px;
+}
+
+.panel1 {
+    background-image: url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500);
+}
+
+.panel2 {
+    background-image: url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500);
+}
+
+.panel3 {
+    background-image: url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500);
+}
+
+.panel4 {
+    background-image: url(https://source.unsplash.com/ITjiVXcwVng/1500x1500);
+}
+
+.panel5 {
+    background-image: url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500);
+}
